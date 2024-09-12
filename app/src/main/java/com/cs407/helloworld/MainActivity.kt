@@ -12,8 +12,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.cs407.helloworld.ui.theme.HelloWorldTheme
+import androidx.core.view.WindowInsetsCompat
+import android.widget.ImageView
 
 class MainActivity : ComponentActivity() {
+    //Declare an ImageView variable
+    private lateinit var inqView: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
